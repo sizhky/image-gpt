@@ -42,7 +42,7 @@ class ImageGPT(pl.LightningModule):
         parser.add_argument("--classify", action="store_true", default=False)
         parser.add_argument("--batch_size", type=int, default=64)
         parser.add_argument("--learning_rate", type=float, default=1e-2)
-        parser.add_argument("--steps", type=int, default=25_000)
+        parser.add_argument("--steps", type=int, default=25)
         return parser
 
     def configure_optimizers(self):
